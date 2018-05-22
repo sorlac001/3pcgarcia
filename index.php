@@ -39,6 +39,7 @@
 		</form>
 		</div>	
 		<a href = "creditos.php">Inicio</a>
+		<a href = "contacto.php">Contato</a>
 		</div>
 	</body>
 		<script src="jquery-3.3.1.js"></script>
