@@ -13,7 +13,7 @@
 			<button class="boton">Consulta</button>
 		</div>
 		<div class="footer">
-			<a href="index.php" aria-label="ir a la pagina de creditos, se cerrará la sesion al redirigirse a la pagina">Index</a>
+			<a href="index.php">Inicio</a>
 		</div>
 	</body>
 	<script src="js/jquery-3.3.1.js"></script>
