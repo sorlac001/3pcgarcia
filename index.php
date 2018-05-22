@@ -1,49 +1,38 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<meta charset = "utf-8"/>
-		<meta name = "viewport" content = "width=device-width"/>
-		<link rel = "stylesheet" href = "css/registro.css"/>
-		<title>Registro</title>
+		<meta charset='UTF-8'>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>Index</title>
 	</head>
-
-	<body>
-		<div class = "pagina">
-		<h2>Registro de usuarios</h2>
-		</br>
-		<p>El siguiente formulario sirve para registrarse en el sistemita</p>
-		</br>
-		
-		<div class = "formulario">
-		<form method = "post" action="alta_registro.php">
-			<legend>Formulario de registro</legend>
-			<fieldset>
-				<label for = "nombre">Nombre: </label>
-				<input name = "nombre" type = "text" required/>
-				</br>
-				<label for = "apellidoP">Apellido paterno: </label>
-				<input name = "apPaterno" type = "text" required/>
-				</br>
-				<label for = "apellidoM">Apellido materno: </label>
-				<input name = "apMaterno" type = "text"/>
-				</br>
-				<label for = "telefono">Tel&eacute;fono: </label>
-				<input name = "telefono" type = "text" required/>
-				</br>
-				<label for = "email">Correo electronico: </label>
-				<input name = "email" type = "email" required/>
-				</br>
-				<input type = "submit" name = "enviar" value = "Enviar"/>
-			</fieldset>
-		</form>
-		</div>	
-		<a href = "creditos.php">Inicio</a>
-		<a href = "contacto.php">Contato</a>
+		<body>
+		<div class="header">
+			<h1>Inicio</h1>
+		</div>
+		<div class="contenido">
+			<div class="formulario">
+				<form action="alta.php" method="post">
+					<fieldset>
+						<legend>Porporcione sus datos personales</legend>
+						<label for="nombre">Nombre:</label><input type="text" name="nombre" required><br /><br />
+						<label for="apaterno">Apellido paterno:</label><input type="text" name="apaterno" required><br /><br />
+						<label for="amaterno">Apellido materno:</label><input type="text" name="amaterno"><br /><br/>
+						<label for="user">Nombre de usuario:</label><input type="text" name="user" required><br /><br />
+						<label for="pass">Contraseña:</label><input type="password" name="pass" required><br /><br />
+						<input class="boton" type="submit" value="Enviar">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="contacto.php">Conctacto</a>
+			<a href="consulta.php">Consulta</a>
+			<a href="creditos.php">Creditos</a>
 		</div>
 	</body>
-		<script src="jquery-3.3.1.js"></script>
-		<script src="jquery.validate.js"></script>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.validate.js"></script>
 		<script>
 			$("#formulario").validate();
 		</script>
